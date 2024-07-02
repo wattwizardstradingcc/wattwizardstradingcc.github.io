@@ -1,0 +1,221 @@
+body {
+    background-image: url(dreamstime_m_60082711-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    background: rgba(0, 0, 0, 0.349);
+    z-index: 100;
+
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(orangered);
+    z-index: 100;
+}
+
+.nav-logo {
+    height: 100px;
+    width: 200px;
+    margin-top: 5px;
+    padding-right: 300px;
+    margin-right: 0px;
+}
+
+.nav-menu ul {
+    display: flex;
+    margin-right: 100px;
+    align-items: center; 
+    margin-top: 40px;
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+}
+
+.nav-menu ul li .link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 20px;
+    background: transparent; 
+    border: 2px solid orangered; 
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 18px; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.nav-menu ul li .link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; 
+    background-color: rgb(231, 228, 227);
+    transform: scaleX(0); 
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.nav-menu ul li .link:hover::before, 
+.nav-menu ul li .link:focus::before {
+    transform: scaleX(1); 
+    transform-origin: bottom left;
+}
+
+.link:hover, .link:active {
+    background-color: orangered;
+    transform: scale(1.07); 
+    opacity: 0.5;
+}
+
+.separator1 {
+    margin-left: 50px;
+    width: 1240px;
+    margin-bottom: 0px;
+    margin-top: 120px;
+}
+
+
+
+.team-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.team-container h2 {
+    margin-bottom: 20px;
+    color: orangered;
+    text-decoration: underline;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team-member {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 5px solid orangered;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
+}
+
+.team-member img.enlarge {
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px 0;
+    color: #333;
+}
+
+.team-member p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.team-member p:last-of-type {
+    font-style: italic;
+}
+
+
+.about-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+    margin-left: 400px;
+    margin-top: 40px;
+}
+
+.about-container h2 {
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: underline;
+}
+
+.about-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 5px solid orangered;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.about-content img:hover {
+    transform: scale(1.1);
+}
+
+.about-content img.enlarge {
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+.about-content p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.separator2 {
+    margin-left: 50px;
+    width: 1240px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.footer{
+    margin-top: 20px;
+}

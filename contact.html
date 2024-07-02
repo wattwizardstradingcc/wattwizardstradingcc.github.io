@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WATT WIZARDS TRADING cc</title>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+         .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .footer .footer-section {
+            margin: 20px;
+        }
+
+        .footer .footer-section h3 {
+            margin-bottom: 15px;
+            color: orangered;
+        }
+
+        .footer .footer-section p, 
+        .footer .footer-section a {
+            color: #ccc;
+            margin: 5px 0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer .footer-section p:hover, 
+        .footer .footer-section a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div>
+                <img class="nav-logo" src="WhatsApp Image 2024-06-22 at 20.24.27_383eade7.jpg" alt="">
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="home.html" class="link">Home</a></li>
+                    <li><a href="about.html" class="link">About Us</a></li>
+                    <li><a href="services.html" class="link">Services</a></li>
+                    <li><a href="portfolio.html" class="link">Portfolio</a></li>
+                    <li><a href="contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <hr class="separator1">
+
+    <div class="contact-container">
+        <h1>Our Services</h1>
+        <div class="contact">
+            <img src="icons/con.png" alt="">
+            <h2>- Contact Details -</h2>
+            <p>+264 81 64 85 762</p>
+            <p>+264 81 55 33 959</p>
+            <p>or</p>
+            <p>wattwizardcc@gmail.com</p>
+            <h2>- Postal Address -</h2>
+            <p>P O Box 242</p>
+            <p>Outapi</p>
+            <p>Namibia</p>
+            <h2>- Address -</h2>
+            <p>Erf 340, Shaanika Nashilongo Street</p>
+            <p>Outapi</p>
+            <p>Namibia</p>
+            <p class="text">Your call is our priority. Here to assist & ensure
+                your needs are met with the utmost care and attention. </p>
+        </div>
+    </div>
+    <hr class="separator2">
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Erf 340, Shaanika Nashilongo Street, Outapi, Namibia</p>
+                <p><i class="fas fa-phone"></i> +264 81 64 85 762</p>
+                <p><i class="fas fa-phone"></i> +264 81 64 85 762</p>
+                <p><i class="fas fa-envelope"></i> wattwizardcc@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></p>
+                <p><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></p>
+                <p><a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Terms of Service</a></p>
+                <p><a href="#">FAQs</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 WATT WIZARDS TRADING CC | All Rights Reserved
+        </div>
+    </footer>
+    
+    
+    <script>
+       
+    
+            const images = document.querySelectorAll('.team-member img');
+            images.forEach(img => {
+                img.addEventListener('click', function () {
+                    if (this.classList.contains('enlarge')) {
+                        this.classList.remove('enlarge');
+                    } else {
+                        images.forEach(i => i.classList.remove('enlarge'));
+                        this.classList.add('enlarge');
+                    }
+                });
+            });
+        ;
+    
+        function closePopup() {
+            var popup = document.getElementById('welcome-popup');
+            popup.style.display = 'none';
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+</body>
+</html>
