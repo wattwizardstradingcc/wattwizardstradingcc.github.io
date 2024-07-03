@@ -108,37 +108,38 @@ body {
     margin: 50px auto;
     overflow: hidden;
     margin-top: 150px;
-    
+    margin-left: 350px;
+    margin-top: 120px;
 }
 
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
     overflow: hidden;
-    width: 100%; 
+    width: 2000px; 
 }
 
 .card {
-    width: calc(100% - 20px);
+    width: 400px; /* Each card occupies full width of the slider with margin */
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.918);
+    background-color: white;
     border-radius: 10px;
     text-align: center;
-    margin-left: 150px;
-    margin-right: 30px; 
-    border: 3px solid orangered;
+    border: solid orangered;
+    margin-left: 50px;
+    margin-right: 150px; /* Adjust margin between cards */
 }
 
 .card:last-child {
-    margin-right: 0; 
+    margin-right: 0; /* Remove margin from the last card to prevent extra space */
 }
 
 .card h2 {
     color: #333;
     font-size: 24px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    text-decoration: underline;
 }
 
 .card p {
@@ -151,7 +152,7 @@ body {
 .service-link {
     display: inline-block;
     padding: 8px 16px;
-    margin-top: 10px;
+    margin-top: 2px;
     background-color: #007bff;
     color: white;
     text-decoration: none;
@@ -164,8 +165,9 @@ body {
 }
 
 .controls {
-    text-align: center;
+   
     margin-top: 20px;
+    margin-left: 180px;
 }
 
 button {
@@ -181,7 +183,6 @@ button {
 
 button:hover {
     background-color: #0056b3;
-    
 }
 
 button:disabled {
